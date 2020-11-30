@@ -1,0 +1,189 @@
+/*****BASE STYLES*****/
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: #2b2b2b;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    padding-right: 60px;
+    line-height: 28px;
+}
+
+/*****GRID*****/
+
+.full-width{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.half-width {
+    width: 600px;
+    float: left;
+}
+
+.third-width {
+    width: 400px;
+    float: left;
+}
+
+/*****SECTION STYLES*****/
+
+#header {
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+#header h1 {
+    font-family: 'Lato', sans-serif;
+    color: #5A0ABD;
+    font-size: 46px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: #5A0ABD;
+}
+
+#work {
+    height: 1250px;
+    background-size: cover;
+}
+
+#work .full-width {
+    background-color: #FFFFFF;
+    background-size: cover;
+    text-align: center;
+}
+
+#work .half-width {
+    padding: 20px 0;
+}
+
+ #work h4 {
+     font-size: 26px;
+ }
+
+#work img {
+    border: 1px solid grey;
+    align-items: center;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32pt;
+    color: #5A0ABD;
+    text-align: center;
+}
+
+#about {
+    height: 650px;
+    background-size: cover;
+}
+
+#about .full-width {
+    padding: 20px 0;
+    background-color: #18ADA3;
+}
+
+#about img {
+    padding-left: 40px;
+    padding-bottom: 60px;
+    
+}
+
+#about h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32pt;
+    font-weight: 900;
+    color: #5A0ABD;
+    text-align: center;
+}
+
+#about h4 {
+    font-size: 26px;
+    padding-top: 50px;
+}
+
+#about p {
+    padding-top: 25px;
+    padding-right: 60px;
+}
+
+#contact {
+    height: 450px;
+}
+
+#contact .full-width {
+    padding: 20px 0;
+    background-color: #0D6E6C;
+}
+
+#contact .third-width {
+    padding: 20px 0;
+}
+
+#contact h5 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 12px;
+}
+
+#contact img {
+  padding: 20px;
+  padding-left: 30px;
+  align-items: center;
+}
+
+#contact a {
+    color: #5A0ABD;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#contact .envelope {
+    padding-left: 170px;
+}
+
+
+#contact li {
+    float: left;
+    overflow: auto;
+}
+
+#contact p {
+     text-align: center;
+     padding-left: 60px;
+ }
+
+/*****FOOTER*****/
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#contact .footer a {
+    font-size: 12px;
+}
+
+
+
+
