@@ -1,118 +1,194 @@
 /*****BASE STYLES*****/
 
+html {
+	font-size: 16px;
+}
+
 body {
     font-family: 'Karla', sans-serif;
     color: #2b2b2b;
 }
 
-p {
-    text-align: justify;
-    font-size: 20px;
-    padding-right: 60px;
-    line-height: 28px;
-}
-
-/*****GRID*****/
-
 .full-width{
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
     overflow: auto;
 }
 
-.half-width {
-    width: 600px;
-    float: left;
+.container {
+	width: 90%;
+    margin: 50px 0;
 }
 
-.third-width {
-    width: 400px;
-    float: left;
+
+
+/****HEADER & FOOTER STYLES*****/
+header {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+	overflow: auto;
+	background-color: #2A6F75;
+	opacity: 0.9;
+
 }
 
-/*****SECTION STYLES*****/
-
-#header {
-    background-image: url(../img/hero-image.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 800px;
+header .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px 0;
 }
 
-#header h1 {
+header h1 {
     font-family: 'Lato', sans-serif;
-    color: #5A0ABD;
-    font-size: 46px;
-    text-align: center;
-    padding-top: 3px;
-}
-
-#header h2 {
-    font-size: 32px;
+    color: azure;
+    font-size: 2.25rem;
+	display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     font-weight: bold;
-    text-align: center;
-    padding-top: 10px;
-    color: #5A0ABD;
+}
+.header-divider {
+    height: .5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
 }
 
-#work {
-    height: 1250px;
-    background-size: cover;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 20px 0;
 }
 
-#work .full-width {
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+nav ul li a {
+    color:#5EE0F7;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+header h2 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****HERO AREA*****/
+
+.hero-area {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****PORTFOLIO AREA*****/
+
+#portfolio {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio h3 {
+	font-size: 1.75rem;
+	font-family: 'Lato', sans-serif;
+	color: #5A0ABD;
+	margin: 2px;
+	text-align: center;
+}
+
+#portfolio .projects {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+	
+}
+
+#portfolio .project-item {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	margin: 40px 0;
+}
+#portfolio .full-width {
     background-color: #FFFFFF;
     background-size: cover;
     text-align: center;
 }
 
-#work .half-width {
-    padding: 20px 0;
+#portfolio .project-item .thumbnail {
+	border: 1px solid #b7b7b7;
+	width: 100%;
 }
 
- #work h4 {
-     font-size: 26px;
- }
-
-#work img {
-    border: 1px solid grey;
-    align-items: center;
-}
-
-h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 32pt;
-    color: #5A0ABD;
-    text-align: center;
-}
+/*****ABOUT AREA*****/
 
 #about {
-    height: 650px;
+	background-color: #096575;
     background-size: cover;
+	color: azure;
+	display: flex;
+	justify-content:center;
 }
 
-#about .full-width {
-    padding: 20px 0;
-    background-color: #18ADA3;
-}
-
-#about img {
-    padding-left: 40px;
-    padding-bottom: 60px;
-    
+#about .content-wrapper {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 #about h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 32pt;
-    font-weight: 900;
-    color: #5A0ABD;
-    text-align: center;
+	color: azure;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+#about .about-img {
+    padding-left: 40px;
+    padding-bottom: 60px; 
+	margin-bottom: 30px;
 }
 
 #about h4 {
-    font-size: 26px;
-    padding-top: 50px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+	padding-right: 20px;
 }
 
 #about p {
@@ -120,8 +196,13 @@ h3 {
     padding-right: 60px;
 }
 
+/*****CONTACT AREA*****/
+
 #contact {
-    height: 450px;
+   display: flex;
+	justify-content: center;
+	text-align: center;
+	background-color: azure;
 }
 
 #contact .full-width {
@@ -156,7 +237,6 @@ h3 {
     padding-left: 170px;
 }
 
-
 #contact li {
     float: left;
     overflow: auto;
@@ -169,21 +249,72 @@ h3 {
 
 /*****FOOTER*****/
 
-.footer {
+footer {
+	display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 12px;
 }
 
-.footer p {
-    text-align: center;
-    font-size: 12px;
-    line-height: 16px;
+/****Media Queries*********/
+
+@media screen and (min-width: 1200px) {
+	.hero-area container {
+		margin: 50px 0 300px 0;
+	}
+	
+	.hero-area h2 {
+		font-size: 1.75rem;
+    	max-width: 1100px;
+	}
+	#portfolio .projects {
+		justify-content: space-around;
+	}
+	
+	#porfolio .project-item {
+		min-width: 490px;
+		max-width: 35%
+	}
+}
+	
+	
+@media screen and (min-width: 768px){
+	nav ul {
+		flex-flow: row-wrap;
+		justify-content: space-between;	
+}
+	
+.header-divider {
+	display: none;
+}
+nav ul {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 265px;
 }
 
-#contact .footer a {
-    font-size: 12px;
+nav ul li {
+	paddng:0;
+}
+#about .about-text {
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
+#about .about-image {
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 300px;
+    max-width: 350px;
+}
 
+}
+/***color palette:
+	Text: #5EE0F7; Background color: #2A6F75;
+	About color: #096575
+	
+	****/
 
 

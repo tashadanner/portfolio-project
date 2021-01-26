@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tasha Danner| Web Developer Portfolio</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -10,88 +11,124 @@
         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-    <section id="header">
-        <div class="full-width">
-            <h1>Hello! I'm Tasha Danner</h1>
-            <h2>A creative &amp; curious burgeoning<br>
-                full-stack web developer,<br> 
-                based in Portland, OR.</h2>
-        </div>
-    </section>
-    <section id="work">
-        <h3>My Portfolio</h3>
-        <div class="full-width">
-            <div class="half-width">
-               <a href="https://blert.bandzoogle.com/home" target="_BLANK"><img src="img/blert.png" alt="Blert website" /></a>
-            </div>
-            <div class="half-width">
+      <header class="full-width">
+		<div class="container">
+		 	<div class="name">
+            	<h1>Tasha Danner</h1>
+		 	</div>
+		<div class="header-divider"></div>
+		<nav>
+			<ul>
+				<li>
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+		</header>
+	<main>
+		<div class="hero-area">
+			<div class="container">
+				<h2>Hi, I'm Tasha!  I'm a web developer, programmer, and data nerd. This site is currently under construction. Thanks for your patience!</h2>
+			</div>
+		</div>
+<!----Portfolio Section ------>
+    <section id="portfolio" class="full-width">
+		<div class="container">
+        	<h3>My Portfolio</h3>
+        <div class="projects">
+            <div class="project-item">
+               <a href="https://blert.bandzoogle.com/home" target="_BLANK">
+				   <img src="img/blert.png" alt="Blert website" class="thumbnail"/>
+				</a>
                 <h4>Blert Band Website</h4>
                     <p>
                         CMS Customization with Bandzoogle: I created a website for my band, Blert, adding images,
-                        fonts, HTML and CSS. Click the link if you want to check out my music!
+                        fonts, HTML and CSS. Click the link if you want to check out my music! This site is also currently under construction.
                     </p>
             </div>
-        </div>
-        <div class="full-width">
-            <div class="half-width">
-                <img src="img/vision-board-thumbnail.png" alt="Vision Board Project" />
-            </div>
-            <div class="half-width">
-                <h4>Customized Vision Board</h4>
+            <div class="project-item">
+                <a href="https://tashadanner.github.io/custom-vision-board/" target="_BLANK">
+					<img src="img/vision-board-thumbnail.png" alt="Vision Board Project" class="thumbnail"/>
+				</a>
+                	<h4>Customized Vision Board</h4>
                     <p>
                         Using Semantic HTML5 and CSS skills learned in class, I customized the 2021 Vision board with my own color picks, images, 
                         and font styles. 
                     </p>
             </div>
-        </div>
-        <div class="full-width">
-            <div class="half-width">
-                <a href="http://www.ffynnonoregon.com/" target="_BLANK"><img src="img/ffynnon.png" alt="Fynnon Oregon website thumbnail" /> </a>
-            </div>
-            <div class="half-width">
+        	<div class="project-item">
+                <a href="http://www.ffynnonoregon.com/" target="_BLANK">
+					<img src="img/ffynnon.png" alt="Fynnon Oregon website thumbnail" class="thumbnail"/>
+				</a>
                 <h4>Ffynnon Event Website</h4>
-                    <p>CMS Customization with Wild Apricot: integrating purchasing and event management tools, custom images, a blog, and 
+                    <p>CMS Customization with the platform, Wild Apricot: integrating purchasing and event management tools, custom images, a blog, and 
                         calendar events. Added custom CSS.        
                     </p>
             </div>
-        </div>   
+			<div class="project-item">
+				<a href="url for unplugged site here" target="_BLANK">
+					<img src="img here" alt="Unplugged site" class="thumbnail"/>
+				</a>
+			</div>
+        </div>
+		</div>
     </section>
-    <section id="about">
-        <div class="full-width">
+	<!-------ABOUT -------->
+    <section id="about" class="full-width">
+        <div class="container">
             <h3>About Me</h3>
-            <div class="half-width">
+         	<div class="about-details">
+				<div class="about-image">
                 <img src="img/tasha-danner.jpg" alt="Tasha Danner" />
-            </div>
-            <div class="half-width">
-                <h4>I love to tell stories through web design.</h4>
-                <p>Curious, creative, and collaborative, I am inspired by nature and beauty. I have experience in Operations, Event Management, and non-profit development. 
-                    I'm also a musician on the side! I enjoy writing clean, elegant code and will make sure your story is told and your vision is realized.    
+				</div>
+           		<div class="about-text">
+             <h4>I love to tell stories through web design and data visualization.</h4>
+                <p>Curious, creative, and collaborative, I have experience in Operations, Event Management, and non-profit development. 
+                    I'm also a musician on the side! I enjoy writing clean, elegant code that tells a story and makes you think.    
                 </p>
-            </div>
-        </div>  
+            	</div>
+        	</div>
+		</div>
     </section>
-    <section id="contact">
-        <div class="full-width">
+	<!-------CONTACT -------->
+    <section id="contact" class="full-width">
+        <div class="container">
             <h3>Let's Connect!</h3>
-            <div class="third-width">
-                <h5>Hire me</h5>
-                    <a href="mailto:tashalouisedanner@gmail.com" target="_BLANK"><img class="envelope" src="img/envelope.png" alt="envelope" /></a>                
-            </div>
-            <div class="third-width">
-                <h5>Follow me</h5>
-                    <ul>
-                        <li>
-                            <a href="https://www.instagram.com/tashadanner/" target="_BLANK"><img src="img/instagram.png" alt="Instagram icon" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/tasha-danner/" target="_BLANK"><img src="img/linkedin.png" alt="LinkedIn Icon" /></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/tashadanner" target="_BLANK"><img src="img/github.png" alt="Github icon" /></a>
-                        </li>
-                    </ul>
-            </div>
-            <div class="third-width">
+            <div class="contact-details">
+				<div class="contact-item">
+                	<h5>Hire me</h5>
+                    	<a href="mailto:tashalouisedanner@gmail.com" target="_BLANK">
+							<img class="envelope" src="img/envelope.png" alt="envelope" />
+						</a>                
+            	</div>
+            	<div class="contact-item">
+                	<h5>Follow me</h5>
+                    	<ul>
+                        	<li>
+                           		<a href="https://www.instagram.com/tashadanner/" target="_BLANK">
+									<img src="img/instagram.png" alt="Instagram icon" />
+								</a>
+                        	</li>
+                        	<li>
+                            	<a href="https://www.linkedin.com/in/tasha-danner/" target="_BLANK">
+									<img src="img/linkedin.png" alt="LinkedIn Icon" />
+								</a>
+                        	</li>
+                        	<li>
+                            	<a href="https://github.com/tashadanner" target="_BLANK">
+									<img src="img/github.png" alt="Github icon" />
+								</a>
+                        	</li>
+                    	</ul>
+            	</div>
+            <div class="contact-item">
                 <h5> Meet me</h5>
                 <p>
                     Portland, OR<br> 
@@ -99,10 +136,11 @@
                 </p>
             </div>
         </div>
+	</div>
+	</section>
         <div class="footer">
-                    <p>Background photo by <a href="https://unsplash.com/@readysetfreddy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Freddy Castro</a> on <a href="https://unsplash.com/@tashald14/likes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
-                    <p>Copyright 2020 | Tasha Danner</p>
+                    <p> &copy; Copyright 2021 | Tasha Danner</p>
         </div>
-    </section>
+	</main>
     </body>
 </html>
