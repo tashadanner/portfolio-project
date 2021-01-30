@@ -9,6 +9,14 @@ body {
     color: #2b2b2b;
 }
 
+p {
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .full-width{
     width: 100%;
     overflow: auto;
@@ -110,6 +118,7 @@ header h2 {
 	display: flex;
     justify-content: center;
     align-items: center;
+	color: #352752;
 }
 
 /*****PORTFOLIO AREA*****/
@@ -117,12 +126,13 @@ header h2 {
 #portfolio {
     display: flex;
     justify-content: center;
+	background-color: azure;
 }
 
 #portfolio h3 {
 	font-size: 1.75rem;
 	font-family: 'Lato', sans-serif;
-	color: #5A0ABD;
+	color: #352752;
 	margin: 2px;
 	text-align: center;
 }
@@ -199,7 +209,7 @@ header h2 {
 /*****CONTACT AREA*****/
 
 #contact {
-   display: flex;
+	display: flex;
 	justify-content: center;
 	text-align: center;
 	background-color: azure;
@@ -210,36 +220,56 @@ header h2 {
     background-color: #0D6E6C;
 }
 
-#contact .third-width {
-    padding: 20px 0;
+#contact h3 {
+	color: #352752;
+	font-size: 1.5rem;
+	text-align: center;
+	display: block;	
+	margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#contact .contact-item {
+	margin: 40px 0;
 }
 
 #contact h5 {
-    font-size: 22px;
+    font-size: 1.25rem;
     text-align: center;
-    line-height: 12px;
+	color: #352752;
 }
 
 #contact img {
-  padding: 20px;
-  padding-left: 30px;
+  padding-left: 10px;
   align-items: center;
 }
 
 #contact a {
-    color: #5A0ABD;
+    color: #352752;
     text-decoration: none;
     font-size: 20px;
     padding-left: 10px;
 }
 
 #contact .envelope {
-    padding-left: 170px;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	
 }
 
-#contact li {
-    float: left;
-    overflow: auto;
+#contact ul {
+	margin: 20px;
+	padding: 0;
+}
+
+#contact ul li {
+    display: inline-block;
+    padding: 0 20px;
 }
 
 #contact p {
@@ -312,7 +342,7 @@ nav ul li {
 
 }
 /***color palette:
-	Text: #5EE0F7; Background color: #2A6F75;
+	Text: #352752; Background color: #2A6F75;
 	About color: #096575
 	
 	****/
