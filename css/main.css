@@ -9,6 +9,10 @@ body {
     color: #2b2b2b;
 }
 
+h4 {
+	color: 352752;
+}
+
 p {
 	display: block;
     margin-block-start: 1em;
@@ -16,6 +20,8 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+/**** GRID Styles*****/
 
 .full-width{
     width: 100%;
@@ -29,7 +35,8 @@ p {
 
 
 
-/****HEADER & FOOTER STYLES*****/
+/****HEADER STYLES*****/
+
 header {
 	display: flex;
     justify-content: center;
@@ -60,6 +67,7 @@ header h1 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
 .header-divider {
     height: .5px;
     width: 100%;
@@ -100,7 +108,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-
 header h2 {
     font-size: 2em;
     font-weight: bold;
@@ -137,11 +144,17 @@ header h2 {
 	text-align: center;
 }
 
+#portfolio h4 {
+	font-size: 1.25rem;
+	color: #352752;
+}
+
 #portfolio .projects {
 	display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+	margin: 10px auto;
 	
 }
 
@@ -162,6 +175,13 @@ header h2 {
 #portfolio .project-item .thumbnail {
 	border: 1px solid #b7b7b7;
 	width: 100%;
+	
+}
+
+#portfolio p {
+	font-size: 1.3rem;
+	color: 352752;
+	font-family:  'Karla', sans-serif;
 }
 
 /*****ABOUT AREA*****/
@@ -189,14 +209,17 @@ header h2 {
 	font-weight: 900;
 }
 
-#about .about-img {
-    padding-left: 40px;
-    padding-bottom: 60px; 
-	margin-bottom: 30px;
+#about .about-image {
+    
+
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 50%;
 }
 
 #about h4 {
     font-size: 1.5rem;
+	line-height: 2.2rem;
     padding-top: 10px;
 	padding-right: 20px;
 }
@@ -204,6 +227,8 @@ header h2 {
 #about p {
     padding-top: 25px;
     padding-right: 60px;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
 }
 
 /*****CONTACT AREA*****/
@@ -234,6 +259,7 @@ header h2 {
 
 #contact .contact-item {
 	margin: 40px 0;
+	color: #352752;
 }
 
 #contact h5 {
@@ -298,12 +324,30 @@ footer {
     	max-width: 1100px;
 	}
 	#portfolio .projects {
+		display: flex;
 		justify-content: space-around;
+		align-items: flex-start;
+		flex-flow: row wrap;
 	}
 	
 	#porfolio .project-item {
 		min-width: 490px;
 		max-width: 35%
+	}
+	
+	#about h4 {
+		display: flex;
+		align-content: flex-start;
+	}
+	
+	#contact .contact-item {
+		max-width: 325px;
+	}
+	
+	#footer {
+		display: flex;
+		justify-content: center;
+		align-content: center;
 	}
 }
 	
@@ -314,31 +358,50 @@ footer {
 		justify-content: space-between;	
 }
 	
-.header-divider {
-	display: none;
+	.header-divider {
+		display: none;
 }
-nav ul {
-    justify-content: space-between;
-    flex-flow: row wrap;
-    width: 265px;
-}
-
-nav ul li {
-	paddng:0;
-}
-#about .about-text {
-	display: flex;
-	justify-content: center;
-	width: 100%;
+	nav ul {
+    	justify-content: space-between;
+    	flex-flow: row wrap;
+    	width: 265px;
 }
 
-#about .about-image {
-	display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-width: 300px;
-    max-width: 350px;
+	nav ul li {
+		paddng:0;
 }
+	
+	#porfolio .project-item {
+		min-width: 490px;
+		max-width: 35%
+	}
+	
+	#about .about-text {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: 50px 0;
+}
+
+	#about .about-image {
+		display: flex;
+    	justify-content: center;
+    	align-items: flex-start;
+    	min-width: 300px;
+    	max-width: 350px;
+}
+	#about p {
+		margin: 0 0 10px 20px;
+    	max-width: 600px;
+	}
+	
+	#contact .contact-details {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-flow: row wrap;
+	}
+	
 
 }
 /***color palette:
