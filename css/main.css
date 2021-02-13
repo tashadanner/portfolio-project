@@ -314,45 +314,8 @@ footer {
 
 /****Media Queries*********/
 
-@media screen and (min-width: 1200px) {
-	.hero-area container {
-		margin: 50px 0 300px 0;
-	}
-	
-	.hero-area h2 {
-		font-size: 1.75rem;
-    	max-width: 1100px;
-	}
-	#portfolio .projects {
-		display: flex;
-		justify-content: space-around;
-		align-items: flex-start;
-		flex-flow: row wrap;
-	}
-	
-	#porfolio .project-item {
-		min-width: 490px;
-		max-width: 35%
-	}
-	
-	#about h4 {
-		display: flex;
-		align-content: flex-start;
-	}
-	
-	#contact .contact-item {
-		max-width: 325px;
-	}
-	
-	#footer {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-	}
-}
-	
-	
 @media screen and (min-width: 768px){
+	
 	nav ul {
 		flex-flow: row-wrap;
 		justify-content: space-between;	
@@ -401,6 +364,78 @@ footer {
 		align-items: flex-start;
 		flex-flow: row wrap;
 	}
+	
+
+
+@media screen and (min-width: 1200px) {
+	
+	.full-width {
+		width: 100%;
+		overflow: auto;
+	}
+	
+	.container {
+		max-width: 1200px;
+	}
+	
+	h2 {
+		text-align: justify;
+	}
+	
+	.hero-area container {
+		margin: 50px 0 300px 0;
+	}
+	
+	.hero-area h2 {
+		font-size: 1.75rem;
+    	max-width: 1100px;
+	}
+	
+	#portfolio .projects {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-flow: row wrap;
+	}
+	
+	#porfolio .project-item {
+		min-width: 490px;
+		max-width: 35%
+	}
+	
+	#portfolio h4 {
+		font-size: 1.85em;
+		font-weight: 700;
+		margin: 10px;
+		
+	}
+	
+	#portfolio p {
+		max-width: 1200px;
+		text-align: justify;
+		font-size: 1.3585em;
+		line-height: 30px;
+		font-weight: 400;
+		margin: 20px;
+	}
+	
+	#about h4 {
+		display: flex;
+		align-content: flex-start;
+	}
+	
+	#contact .contact-item {
+		max-width: 325px;
+	}
+	
+	#footer {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+}
+	
 	
 
 }
